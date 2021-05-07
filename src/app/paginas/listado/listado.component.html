@@ -1,0 +1,73 @@
+<mat-card class="card">
+    <div class="formu">
+        <h1>Dame tus datos</h1>
+    <!-- NOMBRE -->
+        <div>
+        <mat-form-field  appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <mat-icon matPrefix>pregnant_woman</mat-icon>
+            <mat-icon *ngIf="nombreWrong === 'success'" class="success" matSuffix>done</mat-icon>
+            <mat-icon *ngIf="nombreWrong === 'error'" class="error" matSuffix>dangerous</mat-icon>
+            <mat-hint class="error" *ngIf="(nombreWrong) ==='error'">NOMBRE ERRÓNEO</mat-hint>
+
+            <input required [ngModel]='nombre.value' (ngModelChange)='comprobarNombre($event)' matInput type="text" #nombre />
+        </mat-form-field>
+    </div>
+
+<!-- TELEFONO -->
+
+    <div>
+        <mat-form-field appearance="outline">
+        <mat-label>Telefono</mat-label>
+        <mat-icon *ngIf="telefonoWrong === 'success'" class="success" matSuffix>done</mat-icon>
+        <mat-icon *ngIf="telefonoWrong === 'error'" class="error" matSuffix>dangerous</mat-icon>    
+        <mat-icon matPrefix>call</mat-icon>
+        <mat-hint class="error" *ngIf="(telefonoWrong) ==='error'">FORMATO ERRÓNEO</mat-hint>
+
+        <input required [ngModel]="telefono.value" (ngModelChange)="comprobarTelefono($event)" type="text" matInput #telefono onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" maxlength="9">
+        </mat-form-field>
+        
+</div>
+
+<!-- DNI -->
+<div>
+    <mat-form-field  appearance="outline">
+        <mat-label>DNI</mat-label>
+        <mat-icon *ngIf="dniWrong === 'success'" class="success" matSuffix>done</mat-icon>
+        <mat-icon *ngIf="dniWrong === 'error'" class="error" matSuffix>dangerous</mat-icon>
+        <mat-icon matPrefix>contact_page</mat-icon>
+        <mat-hint class="error" *ngIf="dniWrong ==='error'">DNI ERRÓNEO</mat-hint>
+        
+
+        <input required [ngModel]="dni.value" (ngModelChange)="comprobarDNI($event)" minlength="9" maxlength="9" matInput type="text" #dni>
+    
+    
+    </mat-form-field>
+</div>
+
+<!-- EMAIL -->
+
+<div>
+    <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <mat-icon *ngIf="emailWrong === 'success'" class="success" matSuffix>done</mat-icon>
+    <mat-icon *ngIf="emailWrong === 'error'" class="error" matSuffix>dangerous</mat-icon>
+    <mat-icon matPrefix>mail</mat-icon>
+    <mat-hint class="error" *ngIf="emailWrong ==='error'">EMAIL ERRÓNEO</mat-hint>
+
+    <input required [ngModel]="email.value" (ngModelChange)="comprobarEmail($event)" maxlength="200" matInput type="email" #email/>
+</mat-form-field>
+
+    <p><app-listado-rol (rol)="rolDefinido($event)"></app-listado-rol></p>
+
+    <app-jornadas (jornada)="jornadasDefinidas($event)"></app-jornadas>
+    </div>
+    <div class="crear">
+        <button mat-stroked-button class="botonCrear" mat-raised-button type="button" (click)="crearAlumno(
+                        nombre.value,
+                        telefono.value,
+                        dni.value,
+                        email.value)">CONFIRMAR</button>
+                    </div>
+                </div>
+</mat-card>

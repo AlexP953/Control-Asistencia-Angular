@@ -1,0 +1,14 @@
+table, mat-form-field,tr, th {
+  border-radius: 5%;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+mat-form-field mat-label, mat-form-field input{
+  color: white;
+}

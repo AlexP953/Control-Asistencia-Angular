@@ -1,0 +1,9 @@
+app-jornadas {
+    margin-left:5%;
+    width: 35%;
+    display: flex;
+}
+
+mat-card {
+    background: #FF7F00;
+}

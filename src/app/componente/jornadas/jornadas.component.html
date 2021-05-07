@@ -1,0 +1,8 @@
+<mat-form-field appearance="outline">
+<mat-label for="jor">Jornada</mat-label>
+<mat-select [ngModel]="selectedItem" (ngModelChange)="onChange($event)">
+<mat-option *ngFor="let jor of jornadasArray"
+[value]="jor"> {{ jor }}</mat-option>
+
+</mat-select>
+</mat-form-field>

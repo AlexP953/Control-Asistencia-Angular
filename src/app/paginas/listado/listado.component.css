@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    color:#FF7F00
+}
+.card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% auto;
+        background: rgb(255, 255, 255);
+        width: 300px;
+        min-width: 300px;
+    }
+
+mat-label{
+    color: black;
+}
+
+
+.error {
+    color: red;
+}
+.success{
+    color: green;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+.botonCrear{
+    width: 100%;
+    background:#FF7F00;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.crear {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+

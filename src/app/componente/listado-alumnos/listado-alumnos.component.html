@@ -1,0 +1,50 @@
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" #input>
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> NOMBRE </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.nombre}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dni">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> DNI </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.dni}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="telefono">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> TELEFONO </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.telefono}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> EMAIL </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.email}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="jornada">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> JORNADA </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.jornada}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="rol">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> ROL </th>
+    <td mat-cell *matCellDef="let asistente"> {{asistente.rol}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> ELIMINAR </th>
+
+    <td mat-cell *matCellDef="let asistente">
+      <button mat-icon-button (click)="eliminar(asistente.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
