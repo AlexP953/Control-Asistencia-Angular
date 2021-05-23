@@ -11,7 +11,7 @@ Páginas:
 
 ## Demo
 
-Prueba una demo [aquí](lista-angular-e336f.web.app)
+Prueba una demo [aquí](https://lista-angular-e336f.web.app/registro)
 
 ## Screenshots
 
