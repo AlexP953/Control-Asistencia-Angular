@@ -9,6 +9,11 @@ Páginas:
 * /login - Para entrar al modo admin. 
 * /admin - Para ver el listado de alumnos y sus datos.
 
+* Angular
+* Angular Material
+* HTML
+* CSS
+
 ## Demo
 
 Prueba una demo [aquí](https://lista-angular-e336f.web.app/registro)
@@ -17,14 +22,6 @@ Prueba una demo [aquí](https://lista-angular-e336f.web.app/registro)
 
 ![img de demo](https://i.imgur.com/MQAwcN7.png)
 ![img de demo](https://i.imgur.com/yi3oMu0.png)
-
-
-## Lenguajes
-
-* Angular
-* Angular Material
-* HTML
-* CSS
 
 
 ## Creado por
