@@ -8,11 +8,12 @@ Páginas:
 * /registro. 
 * /login - Para entrar al modo admin. 
 * /admin - Para ver el listado de alumnos y sus datos.
-´´´
+
+´´´```
 * Angular
 * Angular Material
 * HTML
-* CSS´´´
+* CSS´´´```
 
 ## Demo
 
