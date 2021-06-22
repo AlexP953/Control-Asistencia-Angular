@@ -1,8 +1,12 @@
 div {
     display: flex;
     justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 mat-icon{
     font-size: 3rem;
 }
+
+

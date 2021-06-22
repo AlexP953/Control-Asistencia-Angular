@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~11.2.4",
     "@angular/platform-browser-dynamic": "~11.2.4",
     "@angular/router": "~11.2.4",
+    "bootstrap": "^5.0.1",
     "dni-js-validator": "^1.0.3",
     "email-validator": "^2.0.4",
     "firebase": "^8.3.0",

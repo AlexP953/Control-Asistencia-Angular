@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 h1{
     color:#FF7F00
 }
@@ -9,11 +5,24 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10% auto;
+        margin: 2% 0;
         background: rgb(255, 255, 255);
-        width: 300px;
-        min-width: 300px;
+        width: 30%;
+        min-width: 30%; 
     }
+
+    .lado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+     .img{
+      background-image: url("https://images.pexels.com/photos/358042/pexels-photo-358042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      background-size:90%;
+      background-size: cover;
+      background-position: center;
+     }
 
 mat-label{
     color: black;
@@ -27,6 +36,9 @@ mat-label{
     color: green;
 }
 
+mat-icon{
+    margin-right:10px;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -55,3 +67,31 @@ margin: 0;
     align-items: center;
 }
 
+@media (max-width: 992px) {
+    .img{
+        display: none;
+    }
+
+    .card{
+        border: none;
+        box-shadow: none;
+    }
+    .bck{
+        
+        height: 100vh;
+    }
+
+    .card{
+        width: 100%;
+        background-image: url("https://images.pexels.com/photos/358042/pexels-photo-358042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        
+        
+        
+    }
+    .formu{
+        background-color: aliceblue;
+        padding: 2%;
+        
+        
+    }
+}

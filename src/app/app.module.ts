@@ -32,7 +32,17 @@ import { PipeMinusculasPipe } from './pipes/pipeMinusculas/pipe-minusculas.pipe'
 import { AumentarDirective } from './directives/aumentar/aumentar.directive';
 import {MatSortModule} from '@angular/material/sort';
 import { HeaderComponent } from './componente/header/header.component';
+import { environment } from 'src/environments/environment';
 
+const config= {
+  apiKey: "AIzaSyCis4WbNcpisXL15cgnoGAge7hCnNrJcQk",
+  authDomain: "lista-angular-e336f.firebaseapp.com",
+  projectId: "lista-angular-e336f",
+  storageBucket: "lista-angular-e336f.appspot.com",
+  messagingSenderId: "43978605899",
+  appId: "1:43978605899:web:e361992847bff1b9ae94ce",
+  measurementId: "G-LCT5R0KQ32"
+}
 
 @NgModule({
   declarations: [

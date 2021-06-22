@@ -27,3 +27,8 @@ body {
   padding: 15px;
 }
 
+
+.loginBut{
+  background: #FF7F00;
+  color: white;
+}
