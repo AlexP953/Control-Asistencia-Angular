@@ -22,8 +22,8 @@ Prueba una demo [aquí](https://lista-angular-e336f.web.app/registro)
 
 ## Screenshots
 
-![img de demo](https://i.imgur.com/MQAwcN7.png)
-![img de demo](https://i.imgur.com/yi3oMu0.png)
+![img de demo](https://imgur.com/HF1vJKg)
+![img de demo](https://imgur.com/xKGD2vm)
 
 
 ## Creado por
