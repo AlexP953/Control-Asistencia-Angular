@@ -4,8 +4,7 @@ Proyecto hecho en clase para practicar. Hecho para un club de basket que necesit
 
 Páginas: 
 * /registro - Aquí los asistentes al partido añaden sus datos de contacto. 
-* /bienvenida - Mensaje de bienvenida para el que rellene el formulario de 
-* /registro. 
+* /bienvenida - Mensaje de bienvenida para el que rellene el formulario de registro. 
 * /login - Para entrar al modo admin. 
 * /admin - Para ver el listado de alumnos y sus datos.
 
